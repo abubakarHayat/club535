@@ -15,13 +15,13 @@ export default function Collected() {
     <>
       <Topbar />
       <Navbar destination={2} />
-      <div className="main flex justify-center mt-10">
+      <div className="main flex justify-center mt-10 overflow-hidden">
         <div className="content">
           <div className="tabs font-fredoka flex">
             {tabs.map((e, i) => (
-              <div className="mx-10" key={i}>
+              <div className="mx-2 md:mx-4 lg:mx-10" key={i}>
                 <button
-                  className={`text-xl ${
+                  className={`text-md md:text-xl ${
                     active === i ? "text-black" : "text-zinc-400"
                   }`}
                   onClick={() => setActive(i)}
@@ -48,12 +48,12 @@ export default function Collected() {
               </div>
             ))}
           </div>
-          <div className="cards flex space-x-10 mt-10">
-            <div className="card border-black border h-96 w-64"></div>
-            <div className="card border-black border h-96 w-64"></div>
-            <div className="card border-black border h-96 w-64"></div>
-            <div className="card border-black border h-96 w-64"></div>
-            <div className="card border-black border h-96 w-64"></div>
+          <div className="cards flex mt-10 justify-evenly flex-wrap w-screen">
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
           </div>
         </div>
       </div>

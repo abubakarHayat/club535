@@ -1,11 +1,11 @@
 const ScoreAddress = ({ position, address }) => {
   return (
-    <div className="flex mr-40 space-x-16 border-b-2 p-4">
+    <div className="flex lg:mr-40 space-x-5 lg:space-x-16 border-b-2 p-4">
       <div>
-        <h2 className="font-semibold">{position}</h2>
+        <h2 className="text-sm font-semibold md:text-md">{position}</h2>
       </div>
       <div>
-        <span>{address}</span>
+        <span className="text-sm md:text-xl">{address}</span>
       </div>
     </div>
   );

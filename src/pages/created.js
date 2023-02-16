@@ -15,7 +15,7 @@ export default function Created() {
             {tabs.map((e, i) => (
               <div className="mx-16" key={i}>
                 <button
-                  className={`text-3xl ${
+                  className={`text-2xl lg:text-3xl ${
                     active === i ? "text-black" : "text-zinc-400"
                   }`}
                   onClick={() => setActive(i)}
@@ -24,7 +24,7 @@ export default function Created() {
                 </button>
                 {active === i ? (
                   <svg
-                    className="w-10 h-10 mx-auto"
+                    className="w-6 h-6 lg:w-10 md:h-10 mx-auto"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="1.5"
@@ -42,12 +42,12 @@ export default function Created() {
               </div>
             ))}
           </div>
-          <div className="cards flex space-x-10 mt-10">
-            <div className="card border-black border h-96 w-64"></div>
-            <div className="card border-black border h-96 w-64"></div>
-            <div className="card border-black border h-96 w-64"></div>
-            <div className="card border-black border h-96 w-64"></div>
-            <div className="card border-black border h-96 w-64"></div>
+          <div className="cards flex mt-10 justify-evenly flex-wrap w-screen">
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
+            <div className="card border-black border h-96 w-64 my-4 mx-2"></div>
           </div>
         </div>
       </div>

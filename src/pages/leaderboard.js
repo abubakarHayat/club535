@@ -21,11 +21,11 @@ export default function Leaderboard() {
       <Navbar destination={3} />
       <div className="main flex justify-center mt-10">
         <div className="content">
-          <div className="tabs font-fredoka flex">
+          <div className="tabs font-fredoka mx-2 flex justify-center flex-wrap">
             {tabs.map((e, i) => (
-              <div className="mx-10" key={i}>
+              <div className="mx-3 lg:mx-10" key={i}>
                 <button
-                  className={`text-xl ${
+                  className={`text-md md:text-xl ${
                     active === i ? "text-black" : "text-zinc-400"
                   }`}
                   onClick={() => setActive(i)}
@@ -52,7 +52,7 @@ export default function Leaderboard() {
               </div>
             ))}
           </div>
-          <div className="leaderboard flex flex-col mt-10 space-y-6">
+          <div className="leaderboard flex flex-col mt-10 space-y-5 items-center lg:items-start">
             <Participant position={1} />
             <Participant position={2} />
             <Participant position={3} />

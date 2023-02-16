@@ -20,7 +20,7 @@ const Navbar = ({ destination }) => {
   return (
     <>
       <ul
-        className="flex justify-center space-x-24"
+        className="flex justify-center space-x-6 lg:space-x-24"
         style={{ color: "#7E7575" }}
       >
         {navItems.map((e, i) => (
@@ -31,11 +31,12 @@ const Navbar = ({ destination }) => {
                 alt="flash sign"
                 width={24}
                 height={50}
+                className="w-2 h-5 lg:w-5 lg:h-8"
               />
             ) : null}
             <Link
               href={e.to}
-              className={`text-2xl ${
+              className={`text-sm lg:text-2xl ${
                 active === i ? "text-black text-3xl" : "text-inherit"
               }`}
               onClick={() => setActive(i)}

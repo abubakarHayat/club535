@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Stats = () => {
   return (
-    <div className="stats my-12 mx-72 w-2/6 h-64 bg-amber-50 rounded-md shadow-lg flex flex-col items-center">
+    <div className="stats mx-6 mt-6 lg:my-12 lg:mx-72 lg:w-3/6 xl:w-2/6 lg:h-64 bg-amber-50 rounded-md shadow-lg flex flex-col items-center">
       <div className="group-1 flex w-5/6 m-2 border-b-2">
         <div>
           <Image
@@ -24,8 +24,8 @@ const Stats = () => {
           </p>
         </div>
       </div>
-      <div className="group-2">
-        <div className="canvas-1 bg-white w-96 h-28 border flex font-fredoka text-sm justify-around">
+      <div className="group-2 h-28">
+        <div className="canvas-1 h-5/6 p-1 mx-2 bg-white lg:w-96 lg:h-28 border flex font-fredoka text-sm justify-around">
           <div className="skill-sm-1 flex flex-col">
             <p>Community</p>
             <div className="badges flex space-x-1 flex-wrap">
@@ -50,7 +50,7 @@ const Stats = () => {
               />
             </div>
           </div>
-          <div className="skill-sm-2 flex flex-col">
+          <div className="skill-sm-2 flex flex-col mx-6">
             <p>Craft</p>
             <div className="badges flex space-x-1 flex-wrap">
               <Image

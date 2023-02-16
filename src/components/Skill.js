@@ -26,21 +26,23 @@ const Skill = ({ name, value }) => {
     return string.charAt() + string.slice(1).toLowerCase();
   }
   return (
-    <>
-      <p className="text-2xl mb-4 font-fredoka">{capitalize(name)}</p>
+    <div>
+      <p className="md:text-xl lg:text-2xl mb-4 font-fredoka">
+        {capitalize(name)}
+      </p>
       <ol className="flex items-center mb-4 sm:mb-5">
         {currSkills.map((el, i) => {
           if (i === TOTAL_SKILL_VALUE - 1) {
             return (
-              <li className="flex items-center w-28" key={i}>
-                <Image src={el.img} alt="badge" width={74} height={73} />
+              <li className="flex items-center lg:w-28" key={i}>
+                <Image src={el.img} alt="badge" width={50} height={50} />
               </li>
             );
           } else {
             return (
               <li
                 key={i}
-                className="flex w-28 items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-1 after:inline-block after:border-black"
+                className="flex lg:w-28 items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-1 after:inline-block after:border-black"
               >
                 <Image src={el.img} alt="badge" width={74} height={73} />
               </li>
@@ -48,7 +50,7 @@ const Skill = ({ name, value }) => {
           }
         })}
       </ol>
-    </>
+    </div>
   );
 };
 export default Skill;
